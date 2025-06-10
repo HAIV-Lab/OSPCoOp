@@ -25,7 +25,7 @@
 
 
   <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+ 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,28 +52,34 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Overcoming Shortcut Problem in VLM for Robust Out-of-Distribution Detection </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="#" target="_blank">Zhuo Xu<sup>1</sup></a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="#" target="_blank">Xiang Xiang<sup>1,2</sup></a><sup>*</sup><sup>†</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="#" target="_blank">Yifan Liang<sup>1</sup></a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup> National Key Lab of Multi-Spectral Information Intelligent Processing Technology
+School of Artificial Intelligence and Automation,Huazhong University of Science and Technology, China
+                    
+                    <span class="author-block"><sup>2</sup> Peng Cheng National Laboratory, Shenzhen, China
+
+                    <br>CVPR 2025 (HighLight)</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution; co-first author</small></span>
+                      <span class="eql-cntrb"><small><br><sup>†</sup>Correspondence to xex@hust.edu.cn; also with School of CST</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +88,10 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/HAIV-Lab/OSPCoOp_Imagenet-bg" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,15 +101,15 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+            <span class="link-block">
+              <a href="https://www.kaggle.com/datasets/xiangexiang/imagenet-bg-ospcoop-cvpr2025" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-book-open"></i>
+                </span>
+                <span>Dataset</span>
+              </a>
+            </span>
             </div>
           </div>
         </div>
@@ -129,12 +125,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/CVPR25.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+             </h2>
     </div>
   </div>
 </section>
@@ -148,69 +143,165 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
+            Vision-language models (VLMs), such as CLIP, have shown remarkable capabilities in downstream tasks. However, the coupling of semantic information between the foreground and the background in images leads to significant shortcut issues that adversely affect out-of-distribution (OOD) detection abilities. When confronted with a background OOD sample, VLMs are prone to misidentifying it as in-distribution (ID) data. In this paper, we analyze the OOD problem from the perspective of shortcuts in VLMs and propose OSPCoOp which includes background decoupling and mask-guided region regularization. We first decouple images into ID-relevant and ID-irrelevant regions and utilize the latter to generate a large number of augmented OOD background samples as pseudo-OOD supervision. We then use the masks from background decoupling to adjust the model's attention, minimizing its focus on ID-irrelevant regions. To assess the model's robustness against background interference, we introduce a new OOD evaluation dataset, ImageNet-Bg, which solely consists of background images with all ID-relevant regions removed. Our method demonstrates exceptional performance in few-shot scenarios, achieving strong results even in one-shot setting, and outperforms existing methods.         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
 
+<!-- 新增的图片和说明文字部分 -->
+<!-- Pipeline Section -->
+<section class="has-text-centered" style="margin-top: 2rem;">
+  <!-- Title -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">  <!-- Wider column -->
+        <h2 class="title is-2 has-text-centered">Pipeline</h2>  <!-- Larger title -->
+      </div>
+    </div>
+  </div>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+  <!-- Image -->
+  <figure class="image" style="width: 85%; max-width: 900px; min-width: 700px; margin: 1.5rem auto;">  <!-- Larger image -->
+    <img src="static/images/pipeline.png" alt="Method overview">
+  </figure>
+
+  <!-- Description -->
+  <div class="container is-fluid">  <!-- 改为 is-fluid 让容器更宽 -->
+    <div class="columns is-centered">
+      <div class="column is-11">  <!-- 改为 is-11 (11/12宽度) -->
+        <div class="content has-text-justified" style="font-size: 1.1rem; max-width: 1000px; margin: 0 auto;">
+          Pipeline of OSPCoOp. We first decouple the images into foreground and background to provide pseudo-OOD supervision.
+Subsequently, we generate ID and pseudo-OOD augmented samples and then use the masks obtained during the background decoupling
+process to provide regional supervision for ID and OOD samples, guiding the model to ignore the ID-irrelevant regions.
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+    </div>
+  </div>
+
+<!-- Dataset Section -->
+<section class="has-text-centered" style="margin-top: 3rem;">  <!-- More spacing -->
+  <!-- Title -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2 has-text-centered">Dataset ImageNet-Bg</h2>  <!-- Larger title -->
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+    </div>
+  </div>
+
+  <!-- First Image -->
+  <figure class="image" style="width: 85%; max-width: 900px; min-width: 700px; margin: 1.5rem auto;">  <!-- Larger image -->
+    <img src="static/images/imagenet-bg.png" alt="ImageNet-Bg overview">
+  </figure>
+
+  <!-- Second Image -->
+  <figure class="image" style="width: 85%; max-width: 900px; min-width: 700px; margin: 1.5rem auto;">  <!-- Larger image -->
+    <img src="static/images/imagenet-bg-more.png" alt="ImageNet-Bg examples">
+  </figure>
+</section>
+
+    <!-- Description -->
+  <div class="container is-fluid">  <!-- 改为 is-fluid 让容器更宽 -->
+    <div class="columns is-centered">
+      <div class="column is-11">  <!-- 改为 is-11 (11/12宽度) -->
+        <div class="content has-text-justified" style="font-size: 1.1rem; max-width: 1000px; margin: 0 auto;">
+          To evaluate the robustness of the model against background interference, we propose an ImageNet background interference test set, ImageNet-Bg, based on the ImageNet validation set with 48,285 images. All images in this dataset are generated by removing ID-relevant regions from samples in the ImageNet validation set. We filter the images to obtain the ImageNet-Bg(S) test set, which contains purer background information with 24,863 images.
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dataset Section -->
+<section class="has-text-centered" style="margin-top: 3rem;">  <!-- More spacing -->
+  <!-- Title -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2 has-text-centered">Results on ImageNet and ImageNet-Bg</h2>  <!-- Larger title -->
+      </div>
+    </div>
+  </div>
+
+  <!-- First Image -->
+  <figure class="image" style="width: 85%; max-width: 1000px; min-width: 800px; margin: 1.5rem auto;">  <!-- Larger image -->
+    <img src="static/images/results-all.png" alt="ImageNet-Bg overview">
+  </figure>
+
+
+
+    <!-- Description -->
+  <div class="container is-fluid">  <!-- 改为 is-fluid 让容器更宽 -->
+    <div class="columns is-centered">
+      <div class="column is-11">  <!-- 改为 is-11 (11/12宽度) -->
+        <div class="content has-text-justified" style="font-size: 1.1rem; max-width: 1000px; margin: 0 auto;">
+          <p>(Left) Results on ImageNet-1K benchmark with iNaturalist, SUN, Places, and Texture datasets.  Our method achieves an average of 94.75% AUR and 25.13% FPR—a 0.91% AUR improvement and a 1.34% FPR reduction over the state-of-the-art few-shot training method. For OOD datasets with significant background interference (e.g., SUN and Places), our method shows notable gains, reaching 96.74% AUR on SUN and 94.01% AUR on Places.
+          <p>(Right) Results on ImageNet-Bg. Results reveal that most methods underperform compared to the training-free CLIP baselines (MCM and GL-MCM). Besides, parameter-efficient fine-tuning demonstrates limited effectiveness in enhancing model robustness against background interference. Extensive parameter tuning may inadvertently reintroduce shortcut learning behaviors, ultimately diminishing the model's robustness against background attacks.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Dataset Section -->
+<section class="has-text-centered" style="margin-top: 3rem;">  <!-- More spacing -->
+  <!-- Title -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2 has-text-centered">Comparison Visualization</h2>  <!-- Larger title -->
+      </div>
+    </div>
+  </div>
+
+  <!-- First Image -->
+  <figure class="image" style="width: 85%; max-width: 1000px; min-width: 800px; margin: 1.5rem auto;">  <!-- Larger image -->
+    <img src="static/images/ID.png" alt="ImageNet-Bg overview">
+  </figure>
+
+    <!-- Description -->
+<div class="container is-fluid">
+  <div class="columns is-centered">
+    <div class="column is-11">
+      <div class="content has-text-centered" style="font-size: 1.1rem; max-width: 1000px; margin: 0 auto;">
+          Visualization on ImageNet-1K ID dataset, where gray regions indicate areas the model identifies as ID-relevant.
+                  </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- First Image -->
+  <figure class="image" style="width: 85%; max-width: 1000px; min-width: 800px; margin: 1.5rem auto;">  <!-- Larger image -->
+    <img src="static/images/OOD-SUN.png" alt="ImageNet-Bg overview">
+  </figure>
+  <!-- First Image -->
+  <figure class="image" style="width: 85%; max-width: 1000px; min-width: 800px; margin: 1.5rem auto;">  <!-- Larger image -->
+    <img src="static/images/OOD-Bg.png" alt="ImageNet-Bg overview">
+  </figure>
+<!-- Description -->
+<div class="container is-fluid">
+  <div class="columns is-centered">
+    <div class="column is-11">
+      <div class="content has-text-centered" style="font-size: 1.1rem; max-width: 1000px; margin: 0 auto;">
+        Visualization on SUN (top) and ImageNet-Bg (bottom) OOD dataset, where darker colors indicate higher similarity with ID categories.
+      </div>
     </div>
   </div>
 </div>
-</div>
-</section>
+
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
+<!-- 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -218,10 +309,7 @@
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -229,49 +317,26 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+-->
 
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
@@ -292,7 +357,8 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+             <br>We would like to thank Keunhong Park for sharing the template.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
